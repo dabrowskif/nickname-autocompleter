@@ -1,0 +1,65 @@
+
+.formMainDiv {
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f0f2f5;
+    -webkit-transition: color .07s linear;
+    transition: color .07s linear;
+    transition: background-color .07s linear .07s;
+}
+
+.nicknameInput {
+    border: 1px solid #4a5fc1;
+    height: 38px;
+    width: calc(140px + 5vw);
+    font-size: calc(12px + 0.5vw);
+    border-radius: 7px 0 0 7px;
+    box-shadow: rgba(74, 95, 193, 0.5) 0 0 8px;
+    -webkit-transition: color .07s linear;
+    transition: color .07s linear;
+    transition: background-color .07s linear .07s;
+}
+
+.nicknameInput:hover {
+    outline: 1px solid #2568fb;
+    border: 1px solid #2568fb;
+    outline-offset: -1px;
+}
+
+.nicknameInput:focus {
+    color: #fff;
+    background-color: #4a5fc1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nicknameInput:focus::placeholder {
+    opacity: 1; /* fixes firefox issue*/
+    color: #fff;
+}
+
+.nicknameSubmit {
+    border: 1px solid #4a5fc1;
+    background-color: #4a5fc1;
+    color: #ffffff;
+    border-radius: 0 7px 7px 0;
+    height: 42px;
+    width: 35px;
+    font-size: calc(12px + 0.5vw);
+    margin-left: 1px;
+    box-shadow: rgba(74, 95, 193, 0.5) 0 0 8px;
+}
+
+.nicknameSubmit:active {
+    transform: scale(0.85);
+}
+
+.nicknameSubmit:hover {
+    border: 1px solid #2568fb;
+    background-color: #2568fb;
+    cursor: pointer;
+    box-shadow: rgba(37, 104, 251, 0.5) 0 0 8px;
+}
+
+.nicknameSubmit:focus, input:focus {
+    outline: none;
+}
